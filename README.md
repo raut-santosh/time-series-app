@@ -1,56 +1,171 @@
 <h1>Data Visualization Web Application</h1>
-    <p>This is a web application for visualizing time series data using Node.js, MongoDB, and a frontend built with Angular.</p>
+
+<h4>This is a web application for visualizing time series data using Node.js, MongoDB for the backend, and a frontend
+        built with Angular.</h4>
 
 <h2>Table of Contents</h2>
+
+<ul>
+    <li><a href="#getting-started">Getting Started</a></li>
     <ul>
-        <li>Getting Started</li>
-            <ul>
-                <li><b>Prerequisites</b>: Before you begin, ensure you have met the following requirements:</li>
-                <ul>
-                    <li>Node.js and npm installed</li>
-                    <li>MongoDB installed and running</li>
-                </ul>
-            </ul>
-        <li>Installation:</li>
-        <ul>
-            <li>Clone the repository:</li>
-            <code>
-                git clone https://github.com/yourusername/data-visualization-web-app.git<br>
-                cd data-visualization-web-app
-            </code>
-            <li>Install dependencies:</li>
-            <code>
-                npm install
-            </code>
-            <li>Configure environment variables:</li>
-            <p>Create a <code>.env</code> file in the root directory and provide the necessary environment variables, including MongoDB connection details.</p>
-            <code>
-                MONGODB_URI=your_mongodb_uri<br>
-                PORT=3000
-            </code>
-            <p>Replace <i>your_mongodb_uri</i> with your actual MongoDB URI.</p>
-            <li>Start the server:</li>
-            <code>
-                npm start
-            </code>
-        </ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
     </ul>
+    <li><a href="#backend">Backend</a></li>
+    <ul>
+        <li><a href="#running-the-backend">Running the Backend</a></li>
+    </ul>
+    <li><a href="#frontend">Frontend</a></li>
+    <ul>
+        <li><a href="#running-the-frontend">Running the Frontend</a></li>
+    </ul>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+</ul>
+
+<h2>Getting Started</h2>
+
+<h3>Prerequisites</h3>
+
+<p><b>Backend</b></p>
+<ul>
+    <li>Node.js and npm installed</li>
+    <li>MongoDB installed and running</li>
+</ul>
+
+<p><b>Frontend</b></p>
+<ul>
+    <li>Node.js and npm installed</li>
+    <li>Angular CLI installed</li>
+</ul>
+
+<h3>Installation</h3>
+
+<h4>Backend</h4>
+<ol>
+    <li>Clone the backend repository:</li>
+</ol>
+<code>
+    <pre>
+        git clone https://github.com/raut-santosh/time-series-app.git
+        cd time-series-api
+    </pre>
+</code>
+
+<ol start="2">
+    <li>Install backend dependencies:</li>
+</ol>
+<code>
+    <pre>
+        npm install
+    </pre>
+</code>
+
+<ol start="3">
+    <li>Configure backend environment variables:</li>
+</ol>
+<p>Create a <code>.env</code> file in the backend root directory and provide the necessary environment variables,
+    including the MongoDB connection details.</p>
+<code>
+    <pre>
+        MONGODB_URI=your_mongodb_uri
+        PORT=3000
+    </pre>
+</code>
+
+<p>Replace <code>your_mongodb_uri</code> with your actual MongoDB URI.</p>
+
+<ol start="4">
+    <li>Start the backend server:</li>
+</ol>
+<code>
+    <pre>
+        node index.js
+    </pre>
+</code>
+
+<h4>Frontend</h4>
+<ol>
+    <li>Clone the frontend repository:</li>
+</ol>
+<code>
+    <pre>
+        git clone https://github.com/raut-santosh/time-series-app.git
+        cd time-series-app
+    </pre>
+</code>
+
+<ol start="2">
+    <li>Install frontend dependencies:</li>
+</ol>
+<code>
+    <pre>
+        npm install
+    </pre>
+</code>
+
+<h2>Backend</h2>
+
+<h3>Running the Backend</h3>
+
+<p>To run the backend server, follow these steps:</p>
+<ol>
+    <li>Navigate to the backend directory:</li>
+</ol>
+<code>
+    <pre>
+        cd time-series-api
+    </pre>
+</code>
+
+<ol start="2">
+    <li>Start the backend server:</li>
+</ol>
+<code>
+    <pre>
+        npm start
+    </pre>
+</code>
+
+<h2>Frontend</h2>
+
+<h3>Running the Frontend</h3>
+
+<p>To run the frontend application, follow these steps:</p>
+<ol>
+    <li>Navigate to the frontend directory:</li>
+</ol>
+<code>
+    <pre>
+        cd time-series-app
+    </pre>
+</code>
+
+<ol start="2">
+    <li>Install nessary modules:</li>
+</ol>
+<code>
+    <pre>
+        npm i
+    </pre>
+</code>
+
+<ol start="2">
+    <li>Start the frontend server:</li>
+</ol>
+<code>
+    <pre>
+        ng serve
+    </pre>
+</code>
 
 <h2>Usage</h2>
-    <ul>
-        <li>Visit <a href="http://localhost:3000">http://localhost:3000</a> in your web browser to access the Data Visualization web application.</li>
-        <li>Use the web interface to input time series data for various variables along with timestamps.</li>
-        <li>The application will store the data in MongoDB and display it as interactive line charts.</li>
-    </ul>
 
-<h2>Features</h2>
-    <ul>
-        <li>Accepts time series data for 10 variables.</li>
-        <li>Stores data in MongoDB for future retrieval.</li>
-        <li>Provides an interactive web interface for data input and visualization.</li>
-        <li>Implements validation for data integrity.</li>
-        <li>Implements error handling for both the server and client sides.</li>
-    </ul>
-
-<h2>Contributing</h2>
-    <p>Contributions are welcome! If you would like to contribute to this project, please open an issue or create a pull request with your proposed changes.</p>
+<ul>
+    <li>Visit <a href="http://localhost:3000">http://localhost:3000</a> in your web browser to access the Data
+        Visualization web application.</li>
+    <li>Use the web interface to input time series data for various variables along with timestamps.</li>
+    <li>The application will store the data in MongoDB and display it as interactive line charts.</li>
+</ul>
